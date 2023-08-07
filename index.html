@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>My Title</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/c21fdcc790.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <!-- Top of website -->
+    <header id="mainHeader">
+        <div class="container">
+            <h1>Raymond Jiang</h1>
+        </div>
+    </header>
+
+    <!-- The navigation bar to switch between pages -->
+    <nav id="navBar">
+        <div class="container">
+            <ul>
+                <li> <input type="button" onClick="selectPage(this, 'homePage');" value="Home" class="btn active" id="btn1"/> </li>
+                <li> <input type="button" onClick="selectPage(this, 'aboutMe');" value="About Me" class="btn" id="btn2"/> </li>
+                <li> <input type="button" onClick="selectPage(this, 'projects');" value="My Projects" class="btn" id="btn3"/> </li>
+                <li> <input type="button" onClick="scrollToElement('mainFooter');" value="Contact Me" class="btn"/> </li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Page -->
+    <div class="container tab" id="homePage">
+        <!-- Page Showcase -->
+        <section id="showcase">
+                <h1> Home Page </h1>
+        </section>
+        <!-- Main Info -->
+        <section id="main">
+                <h1>Welcome to the main area</h1>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae, alias quae ullam magnam eveniet magni suscipit? Obcaecati, dicta aut saepe, quam cumque nihil corrupti magni et porro pariatur impedit cupiditate?
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quasi aspernatur esse, alias incidunt illum quia molestias doloribus sequi rem, rerum non corrupti iusto impedit quisquam dignissimos doloremque voluptatibus ipsam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quasi aspernatur esse, alias incidunt illum quia molestias doloribus sequi rem, rerum non corrupti iusto impedit quisquam dignissimos doloremque voluptatibus ipsam.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur quasi aspernatur esse, alias incidunt illum quia molestias doloribus sequi rem, rerum non corrupti iusto impedit quisquam dignissimos doloremque voluptatibus ipsam.
+                </p>
+        </section>
+    </div>
+
+    <!-- About Me -->
+    <div class="container tab" id="aboutMe">
+        <!-- Page Showcase -->
+        <section id="showcase">
+                <h1> About Me </h1>
+        </section>
+        <!-- Main Info -->
+        <section id="main">
+                <h1>im the goat</h1>
+
+                <h2> Pro Coder </h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Accusantium odio et sit nihil vel necessitatibus.
+                    Aperiam provident autem cupiditate nam, ipsum laudantium soluta reprehenderit vel.
+                </p>
+
+                <h2> Pro Tennis Player </h2>
+                <p> UTR 69
+                    Accusantium odio et sit nihil vel necessitatibus.
+                    Aperiam provident autem cupiditate nam, ipsum laudantium soluta reprehenderit vel.
+                </p>
+
+                <h2> Pro Hiker </h2>
+                <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    Accusantium odio et sit nihil vel necessitatibus.
+                    Aperiam provident autem cupiditate nam, ipsum laudantium soluta reprehenderit vel.
+                </p>
+        </section>
+    </div>
+
+    <!-- Projects -->
+    <div class="container tab" id="projects">
+        <!-- Page Showcase -->
+        <section id="showcase">
+                <h1> My Projects </h1>
+        </section>
+        <!-- Main Info -->
+        <section id="main">
+                <h1>Here are some of my best projects</h1>
+                <ul>
+                    <li>I made google. heres the 
+                        <a href="https://google.com" target = _blank>link</a>
+                    </li>
+                    <li>I made google. heres the 
+                        <a href="https://google.com" target = _blank>link</a>
+                    </li>
+                    <li>I made google. heres the 
+                        <a href="https://google.com" target = _blank>link</a>
+                    </li>
+                </ul>
+        </section>
+    </div>
+
+
+    <!-- Footer -->
+    <footer id="mainFooter">
+        <h1>Raymond Jiang</h1>
+        
+        <div class="block">
+            <h3>Email</h3>
+            <a href="mailto:raymondjiang10@gmail.com?subject=Hello Goat&Body=You're the goat" class="lock">
+                <i class="fa-regular fa-envelope"></i>
+                <i class="fa-regular fa-envelope fa-beat-fade"></i>
+            </a>
+        </div>
+
+        <div class="block">
+            <h3>Github</h3>
+            <a href="https://www.github.com/coolraycode" target=_blank class="lock">
+                <i class="fa-brands fa-github"></i>
+                <i class="fa-brands fa-github fa-beat-fade"></i>
+            </a>
+        </div>
+
+        <div class="block">
+            <h3>Linkedin</h3>
+            <a href="https://www.github.com/coolraycode" target=_blank class="lock">
+                <i class="fa-brands fa-linkedin"></i>
+                <i class="fa-brands fa-linkedin fa-beat-fade"></i>
+            </a>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
