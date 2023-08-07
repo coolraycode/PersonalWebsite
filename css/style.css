@@ -24,6 +24,7 @@ body{
 #navBar{
     background-color: #80a1c1;
     height:min-content;
+    position:relative;
 }
 #navBar ul{
     list-style: none;
@@ -43,14 +44,34 @@ body{
     color:rgb(207, 220, 220);
     text-decoration: none;
     font-weight:bold;
+
+    position:relative;
 }
 /* -----------------------------------------------------Border underneath button */
 .btn.active {
     border-bottom: 3px solid #ba3f1d;
+    transition: border-bottom 0.3s ease;
 }
 /* -----------------------------------------------------Only show home page----*/
-#aboutMe, #projects{
-    display:none;
+/* Add a new CSS class for the sliding animation */
+.tab.slide-in {
+    animation: slideIn 0.75s forwards;
+    position: relative;
+}
+
+/* Keyframes for the sliding animation */
+@keyframes slideIn {
+    from {
+        transform: translateY(-5%);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+/* Hide the content that is not currently active */
+.tab:not(.active) {
+    display: none;
 }
 
 
@@ -120,8 +141,6 @@ body{
 .lock:hover i:nth-child(2) {
     display: block;
 }
-
-
 
 @media(max-width:600px){
     #main{

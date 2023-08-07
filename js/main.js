@@ -3,12 +3,14 @@ function selectPage(button, sectionId) {
     // Hide all sections
     const sections = document.querySelectorAll('.tab');
     sections.forEach((section) => {
+        section.classList.remove('slide-in');
         section.style.display = 'none';
     });
 
     // Show the selected section
     const selectedSection = document.getElementById(sectionId);
     if (selectedSection) {
+        selectedSection.classList.add('slide-in');
         selectedSection.style.display = 'block';
     }
 
